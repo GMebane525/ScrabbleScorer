@@ -53,7 +53,7 @@ public class ScrabbleScorer {
      */
     public boolean isValidWord(String word){
 
-        return (alpha.indexOf(word.substring(0, 1)) > 0) && (Collections.binarySearch(dictionary.get(alpha.indexOf(word.substring(0, 1))), word) >= 0);
+        return (alpha.indexOf(word.substring(0, 1)) >= 0) && (Collections.binarySearch(dictionary.get(alpha.indexOf(word.substring(0, 1))), word) >= 0);
     }
 
     /**
