@@ -86,13 +86,13 @@ public class ScrabbleScorer {
                 break;
             }
             if(word.length() != 0 && app.isValidWord(word)) {
-                System.out.println(word + " - " + app.getWordScore(word) + " points");
+                System.out.println(word + " = " + app.getWordScore(word) + " points");
             }
             else{
                 System.out.println(word + " is not a valid word in the dictionary");
             }
         }
-        System.out.println("Exiting the program hanks for playing");
+        System.out.println("Exiting the program thanks for playing");
     }
 
 }
